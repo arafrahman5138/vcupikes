@@ -1,0 +1,9 @@
+/* .form {
+    padding: 20px;
+} */
+
+.rush_form {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: flex-start; */
+}
