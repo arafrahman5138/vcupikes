@@ -1,0 +1,100 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    height: 500px;
+    border: 1px solid #000000;
+    justify-content: space-evenly;
+    background-color: #ffcb4f;
+    font-style: italic;
+}
+
+.card__body {
+    flex: 0.7;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.card__events {
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: #772432;
+}
+
+.card__logo {
+    flex: 0.4;
+}
+
+
+.card__eventsEvent {
+    display: flex;
+    flex-direction: column;
+}
+
+.card__eventsEventHeader {
+    font-size: 27px;
+    font-weight: 600;
+    font-family: cursive;
+    letter-spacing: 0.07cm;
+}
+
+.card__eventsEventFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5px;
+    width: 90%;
+    align-self: center;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.card__footer {
+    flex: 0.25;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 60%;
+    align-self: center;
+    margin-bottom: 5px;
+    border: 1px solid black;
+    background-color: #772432;
+    color: #ffcb4f;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.card__footerChair {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 768px) {
+    .card {
+        justify-content: space-evenly;
+        height: 100%;
+    }
+    .card__body {
+        flex-direction: column; 
+        /* justify-content: space-between;  */
+    }
+    .card__eventsEventHeader {
+        font-size: 16px;
+    }
+    .card__eventsEventFooter {
+        font-size: 12px;
+    }
+    .card__logo > img {
+        height: 100%;
+        width: 60%;
+    }
+    .card__footer {
+        font-size: 11px;
+        width: 95%;
+        margin-bottom: 1px;
+    }
+}

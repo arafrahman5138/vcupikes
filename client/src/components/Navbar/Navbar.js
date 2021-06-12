@@ -42,13 +42,13 @@ function Navbar() {
                 </Link>
                  </li>
                  <li className='nav-item'>
-                 <Link to="/modules" className="nav-links" onClick={closeMobileMenu}>
-                 Modules 
+                 <Link to="/rushevents" className="nav-links" onClick={closeMobileMenu}>
+                 Rush Events 
                 </Link>
                  </li>
                  <li className='nav-item'>
-                 <Link to="/help" className="nav-links" onClick={closeMobileMenu}>
-                 Help 
+                 <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+                 Rush Form 
                 </Link>
                  </li>
                  <li className='nav-item'>
