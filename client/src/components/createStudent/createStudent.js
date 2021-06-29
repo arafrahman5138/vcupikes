@@ -20,7 +20,8 @@ const useStyles = makeStyles((theme) => ({
   },
   header : {
     padding: 10,
-    
+    marginTop: -15,
+    marginBottom: 10,
   },
   create: {
     backgroundColor: "#ffcb4f",

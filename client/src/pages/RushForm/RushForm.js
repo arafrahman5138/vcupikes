@@ -10,9 +10,17 @@ function RushForm() {
     return (
         <>
             <Container maxWidth="lg">
-                <AppBar className={classes.appBar} position="static" color="inherit">
+                {/* <AppBar className={classes.appBar} position="static" color="inherit">
                     <Typography className={classes.heading} variant="h2" align="center"> RUSH FORM </Typography>
-                </AppBar>
+                </AppBar> */}
+                <header>
+                    <div id="logo">
+                        <img src="/images/pike.jpg" className="pike" alt="" />
+                        <span>
+                        <b>RUSH FORM</b>
+                        </span>
+                    </div>
+                </header>
 
                 <Grow in>
                 <Grid className={classes.mainGrid} container spacing={7}>

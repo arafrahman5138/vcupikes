@@ -233,6 +233,10 @@ main {
     width: calc(100%/7);
   }
 
+  .tooltip {
+    width: 20%;
+  }
+
   .tooltip > .tooltip-inner{
     background-color: #772432;
     color: #772432;

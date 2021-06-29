@@ -7,3 +7,22 @@
     flex-direction: row;
     /* justify-content: flex-start; */
 }
+
+header {
+    display: block;
+    width: 100%;
+    padding: 1.75em 0;
+    border-bottom: 1px solid var(--border-color);
+    background: var(--neutral-color);
+  }
+  
+  header #logo {
+    font-size: 175%;
+    text-align: center;
+    color: var(--main-color);
+    line-height: 1;
+  }
+
+  .pike {
+      transform: scale(1.05);
+  }

@@ -14,6 +14,7 @@ import subMonths from "date-fns/subMonths";
 // import parse from "date-fns/fp/parse";
 import ReactTooltip from 'react-tooltip';
 import EventDescription from "../EventDescription/EventDescription";
+import EventTooltip from '../EventTooltip/EventTooltip'
 import './styles.css'
 
 class Calendar extends React.Component {
@@ -99,9 +100,10 @@ class Calendar extends React.Component {
             <span className="number">{formattedDate}</span>
             <span className="bg">{formattedDate}</span>
           </div>
-          {isEvent && <ReactTooltip className="tooltip" id={`event${formattedDate}`} type="error">
-            <EventDescription date={formattedDate} />
-          </ReactTooltip>
+          {isEvent && <EventTooltip id = {`event${formattedDate}`} formattedDate={formattedDate}/>
+          // <ReactTooltip className="tooltip" id={`event${formattedDate}`} type="error">
+          //   <EventDescription date={formattedDate} />
+          // </ReactTooltip>
           }
           </>
         );

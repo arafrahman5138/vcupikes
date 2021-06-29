@@ -52,12 +52,17 @@ function Navbar() {
                 </Link>
                  </li>
                  <li className='nav-item'>
+                 <a href="http://firemanschallenge.org/" target="_blank" className="nav-links" onClick={closeMobileMenu}>
+                 Fireman's Challenge
+                </a>
+                 </li>
+                 {/* <li className='nav-item'>
                  <Link to="/profile" className="nav-links-mobile" onClick={closeMobileMenu}>
                  Profile 
                 </Link>
-                 </li>
+                 </li> */}
              </ul>
-             {button && <Button buttonStyle='btn--outline' path='/profile'>Profile</Button>}
+             {/* {button && <Button buttonStyle='btn--outline' path='/profile'>Profile</Button>} */}
           </div>
           </nav>
         </>
