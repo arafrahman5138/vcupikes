@@ -43,7 +43,7 @@ export default function ShowStudent() {
     axios.get('http://localhost:5000/students').then((allStudents) => {
       setList(allStudents.data)
     })
-    
+    console.log(studentsList)
   }, [])
 
   return (
