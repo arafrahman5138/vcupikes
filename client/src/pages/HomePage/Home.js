@@ -2,10 +2,12 @@ import React from 'react'
 import './footer.css'
 import './style.css'
 import './Home.css'
+import InstagramEmbed from '@aarnila/react-instagram-embed';
 
 const Home = () => {
     return (
         <>
+        <div className="main">
         <main>
         <div className="main-container">
             <section className="announcements">
@@ -45,23 +47,24 @@ const Home = () => {
             <section>
                 <div className="top-bottom-section">
                     <div className="section-container">
-                        {/* <div className="image">
-                            <img src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-70203.jpg" />
+                        <div className="image">
+                            {/* <img src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-70203.jpg" /> */}
+                            
                         </div>
                         <div className="text">
-                            <h1>Order and pick up. Easy as that.</h1>
-                            <h3>Just open the app, order your favorites, and enjoy contactless pay. From there, choose whichever pickup method is best for you.</h3>
+                            {/* <h1>Follow us on IG!</h1>
                             <div className="cta-container">
                                 <div className="cta">
-                                    See pickup options
+                                    Instagram
                                 </div>
-                            </div>
-                        </div> */}
+                            </div> */}
+                        </div>
                     </div>
                 </div>
+                
                 <div className="top-bottom-section">
-                    <div className="section-container">
-                        {/* <div className="image">
+                    {/* <div className="section-container">
+                        <div className="image">
                             <img src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-72045.jpg" />
                         </div>
                         <div className="text">
@@ -72,13 +75,26 @@ const Home = () => {
                                     Order now
                                 </div>
                             </div>
-                        </div> */}
-                    </div>
+                        </div>
+                    </div> */}
                 </div>
             </section>
         </div>
         </main>
-
+        <InstagramEmbed
+  url='https://instagr.am/p/Zw9o4/'
+  accessToken='123|456'
+  maxWidth={320}
+  hideCaption={false}
+  containerTagName='div'
+  protocol=''
+  injectScript
+  onLoading={() => {}}
+  onSuccess={() => {}}
+  onAfterRender={() => {}}
+  onFailure={() => {}}
+/>
+        </div>
         
     </>
     )

@@ -1,6 +1,23 @@
 
+.main::before {    
+    content: "";
+    background-image: url('./bg.jpeg');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.75;
+}
+
+.main {
+    
+}
+
 .main-container {
     /* max-width: 1440px; */
+    position: relative;
     margin: 0 auto;
 }
 
@@ -9,6 +26,7 @@
     display: flex;
     justify-content: center;
     background-color: #772432;
+    border: 1px solid white;
 }
 
 .announcements .text {
@@ -32,6 +50,7 @@
 .left-right-section {
     display: flex;
     margin-bottom: 32px;
+    border: 1px solid white;
 }
 
 .left-right-section .text {
@@ -107,6 +126,7 @@ section {
 
 .top-bottom-section {
     width: 50%;
+    border: 1px solid white;
 }
 
 .section-container {
@@ -146,12 +166,12 @@ section {
 }
 
 .top-bottom-section .text {
-    background-color: #d4e9e2;
+    background-color: #a79e70;
     padding-left: 24px;
     padding-right: 24px;
     padding-bottom: 32px;
     padding-top: 16px;
-    color: #1e3932;
+    color: white;
     flex-grow: 1;
     font-size: 16px;
 }
