@@ -12,7 +12,7 @@
   word-wrap: normal;
   white-space: nowrap;
   direction: ltr;
-
+  font-size: 24px;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;

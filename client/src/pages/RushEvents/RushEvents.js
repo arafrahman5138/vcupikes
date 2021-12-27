@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import RushCalendar from '../../components/RushCalendar/RushCalendar'
 import RushCards from '../../components/RushCards/RushCards'
 import './styles.css'
-import ToggleButton from '@material-ui/lab/ToggleButton';
+import ToggleButton from '@mui/material/ToggleButton';
 import { Container, AppBar, Typography, Grow, Grid } from '@material-ui/core'
 
 const RushEvents = () => {

@@ -2,7 +2,17 @@ import React from 'react'
 import './footer.css'
 import './style.css'
 import './Home.css'
-import InstagramEmbed from '@aarnila/react-instagram-embed';
+import { Container, Row, Col } from "react-bootstrap";
+import {
+    AiFillGithub,
+    AiOutlineTwitter,
+    AiFillInstagram,
+    AiFillSlackCircle,
+    AiFillFacebook
+  } from "react-icons/ai";
+import { FaLinkedinIn } from "react-icons/fa";
+import { Link } from 'react-router-dom';
+// import InstagramEmbed from 'react-instagram-embed';
 
 const Home = () => {
     return (
@@ -25,7 +35,7 @@ const Home = () => {
                     <h1>RUSH IS A TAP AWAY</h1>
                     <h3>Rush PIKE or transfer</h3>
                     <div className="cta">
-                        Join now
+                        <Link to="/rushform" className="homelink"> Rush Now! </Link>
                     </div>
                 </div>
                 <div className="image">
@@ -40,60 +50,78 @@ const Home = () => {
                     <h1>Firemans Challenge</h1>
                     <h3>Donate to the Evans Hanes Burn Center</h3>
                     <div className="cta">
-                        Firemans Challenge
+                        <a href="http://firemanschallenge.org/" className="homelink">Firemans Challenge</a>
                     </div>
                 </div>
             </section>
-            <section>
+            {/* <section>
                 <div className="top-bottom-section">
                     <div className="section-container">
                         <div className="image">
-                            {/* <img src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-70203.jpg" /> */}
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png" />
                             
                         </div>
                         <div className="text">
-                            {/* <h1>Follow us on IG!</h1>
-                            <div className="cta-container">
-                                <div className="cta">
-                                    Instagram
-                                </div>
-                            </div> */}
+                           
                         </div>
                     </div>
                 </div>
                 
                 <div className="top-bottom-section">
-                    {/* <div className="section-container">
+                    <div className="section-container">
                         <div className="image">
                             <img src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-72045.jpg" />
                         </div>
                         <div className="text">
-                            <h1>Floating into summer like…</h1>
-                            <h3>Keep the laid-back vibes going. Order Starbucks drinks on Uber Eats.**</h3>
+                        <h1>Follow us on IG!</h1>
                             <div className="cta-container">
                                 <div className="cta">
-                                    Order now
+                                    Instagram
                                 </div>
                             </div>
                         </div>
-                    </div> */}
+                    </div>
                 </div>
-            </section>
+            </section> */}
+        <Row>
+          <Col md={12} className="home-about-social">
+            <h1 className="purple">CONNECT WITH US</h1>
+            <ul className="home-about-social-links">
+              <li className="social-icons">
+                <a
+                  href="https://twitter.com/pikes_vcu"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <AiOutlineTwitter />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="https://www.facebook.com/PIKEatVCU/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <AiFillFacebook />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="https://www.instagram.com/pikes_vcu/?hl=en"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour home-social-icons"
+                >
+                  <AiFillInstagram />
+                </a>
+              </li>
+            </ul>
+          </Col>
+        </Row>
         </div>
         </main>
-        <InstagramEmbed
-  url='https://instagr.am/p/Zw9o4/'
-  accessToken='123|456'
-  maxWidth={320}
-  hideCaption={false}
-  containerTagName='div'
-  protocol=''
-  injectScript
-  onLoading={() => {}}
-  onSuccess={() => {}}
-  onAfterRender={() => {}}
-  onFailure={() => {}}
-/>
         </div>
         
     </>

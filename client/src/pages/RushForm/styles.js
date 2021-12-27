@@ -15,10 +15,14 @@ export default makeStyles(() => ({
     heading: {
         fontFamily: 'Verdana'
     },
-    mainGrid: {
-        direction: "row",
-    },
+    // mainGrid: {
+    //     direction: "row",
+    // },
     form: {
-        padding: 20
+        marginTop: "20px",
+        bottom: "-5px",
+    },
+    list: {
+        marginTop: '15px',
     }
 }))

@@ -2,10 +2,10 @@ import React from 'react'
 import { Container, AppBar, Typography, Grow, Grid } from '@material-ui/core'
 import Student from '../../components/showStudent/showStudent.js'
 import NewStudent from '../../components/createStudent/createStudent.js'
-import useStyles  from './styles'
-import './RushForm.css'
+import useStyles  from '../RushForm/styles'
+import '../RushForm/RushForm.css'
 
-function RushForm() {
+function Recruitment() {
     const classes = useStyles()
     return (
         <>
@@ -17,26 +17,19 @@ function RushForm() {
                     <div id="logo">
                         <img src="/images/pike.jpg" className="pike" alt="" />
                         <span>
-                        <b>RUSH FORM</b>
+                        <b>RECRUITMENT</b>
                         </span>
                     </div>
                 </header>
 
                 <Grow in>
-                <Grid className={classes.mainGrid} container spacing={4}>
+                <Grid className={classes.mainGrid} container spacing={7}>
                     {/* <div className="rush_form"> */}
                     {/* <Container className={classes.forms} spacing={3}> */}
-                        
-                        <Grid className={classes.form} item xs ={14} sm={5}>
-                                {/* <AppBar className={classes.appBar} position="static" color="inherit">  */}
-                                    <NewStudent/>
-                                {/* </AppBar>  */}
-                        </Grid>
                         {/* <Grid container justify="space-between"  alignItems="stretch">  */}
-                        <Grid className={classes.list} item xs ={12} sm={7}>
+                        <Grid className={classes.list} item xs ={14} sm={12}>
                             {/* <AppBar className={classes.appBar} position="static" color="inherit"> */}
-                                {/* <Student/> */}
-                                <img className="rush" src="images/rushpike.jpeg" alt="" />
+                                <Student/>
                             {/* </AppBar>  */}
                         </Grid>
                         {/* </Grid> */}
@@ -49,4 +42,4 @@ function RushForm() {
     )
 }
 
-export default RushForm
+export default Recruitment

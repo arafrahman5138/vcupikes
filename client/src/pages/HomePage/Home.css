@@ -29,6 +29,36 @@
     border: 1px solid white;
 }
 
+@media (max-width: 768px) {
+    .announcements {
+        flex-direction: column;
+    }
+    .announcements > img {
+        width: 75vw;
+        height: 40vh;
+        margin: auto !important;
+        margin-bottom: 25px !important;
+        margin-top: -35px !important;
+    }
+    .announcements .text {
+        margin: auto !important;
+        margin-left: 2.5em;
+        max-width: 70% !important;
+    }
+    .left-right-section {
+        flex-direction: column;
+    }
+    .left-right-section .text {
+        width: 100% !important; 
+    }
+    .left-right-section .image {
+        width: 100% !important;
+    }
+    .home-about-social {
+        width: 90% !important;
+    }
+}
+
 .announcements .text {
     padding-top: 5.2rem;
     padding-bottom: 3.2rem;
@@ -49,6 +79,7 @@
 
 .left-right-section {
     display: flex;
+    /* flex-direction: column; */
     margin-bottom: 32px;
     border: 1px solid white;
 }
@@ -93,15 +124,17 @@
     padding: 7px 16px;
     border: 1px solid;
     border-radius: 50px;
-    color: #1e3932;
+    background-color: #772432;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.2s ease;
+    text-decoration: none;
 }
 
 .text .cta:hover {
     padding: 7px 32px;
-    background-color: rgba(30,57,50,.1);
+    background-color: white;
+    color: #772432;
 }
 
 .chill .text {
@@ -166,14 +199,14 @@ section {
 }
 
 .top-bottom-section .text {
-    background-color: #a79e70;
-    padding-left: 24px;
+    /* background-color: #a79e70; */
+    /* padding-left: 24px;
     padding-right: 24px;
     padding-bottom: 32px;
     padding-top: 16px;
     color: white;
     flex-grow: 1;
-    font-size: 16px;
+    font-size: 16px; */
 }
 
 .top-bottom-section .text h1 {
@@ -192,3 +225,69 @@ section {
     margin-bottom: 32px;
 }
 
+.home-about-social {
+    /* margin-left: 30%; */
+    margin: auto;
+    width: 50%;
+    text-align: center !important;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    color: white !important;
+  }
+  
+  .home-about-social-links {
+    justify-content: center !important;
+    padding-top: 15px !important;
+    display: inline-block !important;
+    position: relative !important;
+    padding-inline-start: 0 !important;
+  }
+  
+  .home-social-icons {
+    position: relative !important;
+    display: inline-block !important;
+    width: 40px !important;
+    height: 40px !important;
+    text-align: center !important;
+    font-size: 1.2em !important;
+    line-height: 2em !important;
+    background: #a79e70!important;
+    border-radius: 50% !important;
+    transition: 0.5s !important;
+  }
+  
+  .home-social-icons::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #772432;
+    transition: 0.5s;
+    transform: scale(0.9);
+    z-index: -1;
+  }
+  
+  .home-social-icons:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #772432;
+  }
+  
+  .home-social-icons:hover {
+    color: #772432;
+    box-shadow: 0 0 5px #772432;
+    text-shadow: 0 0 2px #772432;
+  }
+  
+  .social-icons {
+    display: inline-block !important;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+  .homelink {
+      text-decoration: none !important;
+      color: rgb(240, 227, 227) !important;
+  }

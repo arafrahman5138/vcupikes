@@ -16,6 +16,7 @@ import ReactTooltip from 'react-tooltip';
 import EventDescription from "../EventDescription/EventDescription";
 import EventTooltip from '../EventTooltip/EventTooltip'
 import './styles.css'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 class Calendar extends React.Component {
   state = {
@@ -30,14 +31,14 @@ class Calendar extends React.Component {
       <div className="header row flex-middle">
         <div className="col col-start">
           <div className="icon" onClick={this.prevMonth}>
-            chevron_left
+          <i className="fa fa-chevron-left"></i>
           </div>
         </div>
         <div className="col col-center">
           <span>{format(this.state.currentMonth, dateFormat)}</span>
         </div>
         <div className="col col-end" onClick={this.nextMonth}>
-          <div className="icon">chevron_right</div>
+          <div className="icon"><i className="fa fa-chevron-right"></i></div>
         </div>
       </div>
     );

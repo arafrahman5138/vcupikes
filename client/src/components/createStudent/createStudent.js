@@ -10,21 +10,27 @@ const useStyles = makeStyles((theme) => ({
   root: {
     '& > *': {
       margin: theme.spacing(2),
-      width: '40ch',
+      width: '35ch',
       backgroundColor: "white",
       borderRadius: "10px",
       borderColor: "#ffcb4f",
       borderWidth: "1px"
     },
-    backgroundColor: "#772432",
+    borderRadius: "0px 0px 5px 5px",
+    backgroundColor: "#a79e70",
   },
   header : {
-    padding: 10,
-    marginTop: -15,
-    marginBottom: 10,
+    padding: 15,
+    // marginTop: -15,
+    borderRadius: '5px 5px 0px 0px',
+    backgroundColor: "#772432",
+    color: 'white',
+    fontFamily: "Georgia",
+    fontSize: '20px',
+    marginBottom: 0,
   },
   create: {
-    backgroundColor: "#ffcb4f",
+    backgroundColor: "#772432",
     color: "white"
   }
 }));
@@ -70,7 +76,7 @@ export default function CreateStudent() {
 
   return (
     <>
-    <h2 className={classes.header} >Sign Up Here!</h2>
+    <h1 className={classes.header} >Sign Up Here!</h1>
     <form className={classes.root} noValidate autoComplete="off">
       <CssTextField id="custom-css-outlined-input" label="Name" variant="outlined" value={student.name} onChange={event => setStudent({...student, name: event.target.value})} />
       <CssTextField id="custom-css-outlined-input" label="Email" variant="outlined" value={student.email} onChange={event => setStudent({...student, email: event.target.value})}/>
@@ -79,7 +85,7 @@ export default function CreateStudent() {
       <CssTextField id="custom-css-outlined-input" label="Instagram" variant="outlined" value={student.ig} onChange={event => setStudent({...student, ig: event.target.value})}/>
 
       <Button className={classes.create} variant="contained" color="#ffcb4f" onClick={createStudent}>
-        Rush Hard
+        Submit
       </Button>
     </form>
     </>

@@ -11,8 +11,9 @@ import axios from 'axios'
 
 const StyledTableCell = withStyles((theme) => ({
   head: {
-    backgroundColor: "#772432",
+    backgroundColor: "#ffcb4f",
     color: theme.palette.common.white,
+    fontSize: 16,
   },
   body: {
     fontSize: 14,
@@ -32,6 +33,15 @@ const useStyles = makeStyles({
   table: {
     minWidth: 700,
   },
+  header : {
+    padding: 15,
+    // marginTop: -15,
+    backgroundColor: "#772432",
+    color: 'white',
+    fontFamily: "Georgia",
+    fontSize: '20px',
+    marginBottom: 0,
+  },
 });
 
 export default function ShowStudent() {
@@ -48,7 +58,7 @@ export default function ShowStudent() {
 
   return (
     <>
-    <h2>All Rushes</h2>
+    <h2 className={classes.header}>All Rushes</h2>
     <TableContainer component={Paper}>
       <Table className={classes.table} aria-label="customized table">
         <TableHead>
