@@ -50,7 +50,7 @@ export default function ShowStudent() {
   const [studentsList, setList] = useState([]) 
 
   useEffect(() => {
-    axios.get('http://localhost:5000/students').then((allStudents) => {
+    axios.get('https://vcupikes.herokuapp.com/students').then((allStudents) => {
       setList(allStudents.data)
     })
     console.log(studentsList)
