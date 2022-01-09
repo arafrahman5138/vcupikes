@@ -33,7 +33,7 @@ const Home = () => {
             <section className="rewards left-right-section">
                 <div className="text">
                     <h1>RUSH IS A TAP AWAY</h1>
-                    <h3>Rush PIKE!</h3>
+                    <h3>RUSH PIKE!</h3>
                     <div className="cta">
                         <Link to="/rushform" className="homelink"> Rush Now! </Link>
                     </div>
