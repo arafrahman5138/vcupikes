@@ -16,7 +16,7 @@ const RushEvents = () => {
         <div className="App">
           <header>
               <div id="logo">
-                <img src="/images/pike.jpg" className="pike" alt="" />
+                {/* <img src="/images/pike.jpg" className="pike" alt="" /> */}
                 <span>
                   <b>RUSH {calendar ? 'CALENDAR' : 'CARD'}</b>
                 </span>

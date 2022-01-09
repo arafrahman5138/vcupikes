@@ -15,7 +15,7 @@ function RushForm() {
                 </AppBar> */}
                 <header>
                     <div id="logo">
-                        <img src="/images/pike.jpg" className="pike" alt="" />
+                        {/* <img src="/images/pike.jpg" className="pike" alt="" /> */}
                         <span>
                         <b>RUSH FORM</b>
                         </span>
