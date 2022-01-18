@@ -9,22 +9,12 @@ const RushCards = () => {
                 <div className="card__events">
                     <div className="card__eventsEvent">
                         <div className="card__eventsEventHeader">
-                            Dodgeball
+                            Flag Football
                         </div>
                         <div className="card__eventsEventFooter">
-                            <p>8/26</p>
-                            <p>2:30</p>
-                            <p>Cary Street Gym</p>
-                        </div>
-                    </div>
-                    <div className="card__eventsEvent">
-                        <div className="card__eventsEventHeader">
-                            Meet the Pikes
-                        </div>
-                        <div className="card__eventsEventFooter">
-                            <p>8/26</p>
-                            <p>3:30</p>
-                            <p>919 W Grace St</p>
+                            <p>1/26</p>
+                            <p>5:30</p>
+                            <p>Petronius S. Jones Park</p>
                         </div>
                     </div>
                     <div className="card__eventsEvent">
@@ -32,19 +22,29 @@ const RushCards = () => {
                             Shrimp Boil
                         </div>
                         <div className="card__eventsEventFooter">
-                            <p>8/26</p>
-                            <p>5:30</p>
+                            <p>1/27</p>
+                            <p>6:30</p>
                             <p>919 W Grace St</p>
                         </div>
                     </div>
                     <div className="card__eventsEvent">
                         <div className="card__eventsEventHeader">
-                            River Float
+                            Meet the Pikes
                         </div>
                         <div className="card__eventsEventFooter">
-                            <p>8/26</p>
-                            <p>6:30</p>
+                            <p>2/02</p>
+                            <p>6:00</p>
                             <p>919 W Grace St</p>
+                        </div>
+                    </div>
+                    <div className="card__eventsEvent">
+                        <div className="card__eventsEventHeader">
+                            Invite Dinner
+                        </div>
+                        <div className="card__eventsEventFooter">
+                            <p></p>
+                            <p>TBD</p>
+                            <p></p>
                         </div>
                     </div>
                 </div>
@@ -55,15 +55,15 @@ const RushCards = () => {
             <div className="card__footer">
                 <div className="card__footerChair">
                     <p>Recruitment Chair</p>
-                    <p>Rob the Builder</p>
-                    <p>(888) 6969 420</p>
-                    <p>crackhead@gmail.com</p>
+                    <p>Noah Allumani</p>
+                    <p>(571) 406 9780</p>
+                    <p>allumanin@vcu.edu</p>
                 </div>
                 <div className="card__footerChair">
-                    <p>Assistant</p>
-                    <p>Rob the Builder</p>
-                    <p>(888) 6969 420</p>
-                    <p>crackhead@gmail.com</p>
+                    <p>VP of Recruitment</p>
+                    <p>Matt Berard</p>
+                    <p>(703) 554 4368</p>
+                    <p>berardm@vcu.edu</p>
                 </div>
             </div>
         </div>

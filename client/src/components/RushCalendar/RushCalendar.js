@@ -68,7 +68,7 @@ class Calendar extends React.Component {
     const startDate = startOfWeek(monthStart);
     const endDate = endOfWeek(monthEnd);
 
-    const events = [new Date("Fri Jun 11 2021 06:30:00 GMT-0400 (Eastern Daylight Time)"), new Date("Tues Jun 15 2021 06:30:00 GMT-0400 (Eastern Daylight Time)")]
+    const events = [new Date("Wed Jan 26 2022 05:30:00 GMT-0400 (Eastern Daylight Time)"), new Date("Thur Jan 27 2022 06:30:00 GMT-0400 (Eastern Daylight Time)"), new Date("Wed Feb 02 2022 06:00:00 GMT-0400 (Eastern Daylight Time)")]
 
     const dateFormat = "d";
     const rows = [];
@@ -81,7 +81,8 @@ class Calendar extends React.Component {
       for (let i = 0; i < 7; i++) {
         formattedDate = format(day, dateFormat);
         const cloneDay = day;
-        const isEvent = isSameDay(day, events[0]) || isSameDay(day, events[1])
+        const isEventt = isSameDay(day, events[0]) || isSameDay(day, events[1]) 
+        const isEvent = isEventt || isSameDay(day, events[2])
         // const isEvent = events.includes("Fri Jun 11 2021 00:00:00 GMT-0400 (Eastern Daylight Time)")
         // console.log(day)
         days.push(
